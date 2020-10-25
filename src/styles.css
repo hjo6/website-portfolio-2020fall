@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.header-container {
+  color: #840000; /* Dark red */
+  background-color: #FF864D;  /* Orange */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #000;
+}
+
+.header {
+  margin: 5px;
+  border: 3px solid #000;
+  background-color: #A86;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome {
+  font-size: 3em;
+}
+
+.about-container {
+  padding: 20px;
+  color: #840000;
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  border-bottom: 1px solid #000;
+}
+
+.about {
+  width: 900px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid #000;
+  background-color: peachpuff;
+}
+
+.about-me {
+  padding: 20px;
+  width: 350px;
+  font-size: 1.2em;
+  justify-content: center;
+}
+
+.about-me img {
+  width: 350px;
+}
+
+.directory-container {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #FF864D;  /* Orange */
+}
+
+.directory {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+
+.button {
+  padding: 20px;
+}
+
+.directory-item {
+  border: 2px solid #000;
+  background-color: #A86;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+}
