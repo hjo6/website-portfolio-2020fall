@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Experiences Directory</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function openTab(evnt, tabName) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i=0; i < tabcontent.length; i++){
+          tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i=0; i < tablinks.length; i++){
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(tabName).style.display = "block";
+        evnt.currentTarget.className += " active";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="header">
+        <div class="banner">Experiences</div>
+      </div>
+    </div>
+
+    <div class="body-container">
+      <div class="body">
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'dcp')">Disney College Program</button>
+        </div>
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'pmgc')">Pitt Men's Glee Club</button>
+        </div>
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'ama')">American Music Abroad</button>
+        </div>
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'ychc')">York County Honors Choir</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="dcp" class="tabcontent">
+      <h3>Disney College Program</h3>
+      <p>During what would be my junior year spring semester, I took a short break from studying to do the Disney College Program. The program is for college students to come work at either Disneyland or Disney World to gain new experiences and learn more about the company, industry, and prospective job markets. I was positioned as Outdoor Vending at Magic Kingdom; at first, I was upset because it simply did not sound like this position would be fun. Selling popcorn, ice cream, and other snacks to likely angry, annoyed, and/or tired customers? I came to the conclusion that it's a once in a lifetime experience that I would always regret turning down, so I accepted my position. Let me tell you, it was <strong>not</strong> what I thought it would be. It was an incredible experience, and the position was one of the best in the company. I mean, how often do you get to stand around for a half an hour while a parade with all of your favorite Disney characters roll by? Not only that, but making the magic for the guests, or giving them the best customer service possible, was always rewarding. During my time in the DCP, I learned a lot about myself, made countless friends, and had an experience that you can't get anywhere else!</p>
+    </div>
+
+    <div id="pmgc" class="tabcontent">
+      <h3>Pitt Men's Glee Club</h3>
+      <p>One of the oldest extra-curricular clubs on Pitt's campus, the Pitt Men's Glee Club is one of the most acclaimed all male vocal ensembles in the country, possibly even the world! Directed by Richard Teaster, the group has been invited to perform domestically across America <strong>and</strong> internationally across Europe. I was fortunate to be a part of this incredible ensemble and tour both America and parts of Europe in my time with the choir. The choir is especially impressive as the members are <strong>not</strong> music majors; the members all have a love for singing, which brings them together to be the best they can be! I learned a lot of great lessons from Richard, and also made a lot of wonderful friends within the group.</p>
+    </div>
+
+    <div id="ama" class="tabcontent">
+      <h3>American Music Abroad</h3>
+      <p>In high school, I was fortunate enough for my choir director to recommend me to perform with a group called American Music Abroad. Basically, the group is made up of a choir and a band, and their repertoire is classic American music throughout the different eras and genres. On my trip, we spent approximately 2 weeks touring across 5 different countries in Europe: France, Germany, Austria, Italy, and Switzerland. This experience was absolutely lifechanging, as it was my first ever trip to any European country. I am forever grateful for being able to experience vastly different cultures to our own at such a relatively young age.</p>
+    </div>
+
+    <div id="ychc" class="tabcontent">
+      <h3>York County Honor's Choir</h3>
+      <p>The York County Honor's Choir is a select choir made up of extraordinary students across the York county in Pennsylvania. There are 2 ensembles within the organization: the Junior honors choir, and the Senior honors choir. The junior honors choir consists of students from grades 7-9, while the the senior honors choir consists of students from grades 10-12. I was fortunate to be a part of both groups for the full "allowed" time (all 6 years). I was taught discipline, leadership, compassion, empathy, and so much more from the incredible directors in this choir.</p>
+    </div>
+  </body>
+</html>
