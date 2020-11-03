@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Influences Directory</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function openTab(evnt, tabName) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i=0; i < tabcontent.length; i++){
+          tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i=0; i < tablinks.length; i++){
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(tabName).style.display = "block";
+        evnt.currentTarget.className += " active";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="header">
+        <div class="banner">Influences</div>
+      </div>
+    </div>
+
+    <div class="body-container">
+      <div class="body">
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'family')">Family</button>
+        </div>
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'friends')">Friends</button>
+        </div>
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'u2')">U2</button>
+        </div>
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'radiohead')">Radiohead</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="family" class="tabcontent">
+      <h3>Family</h3>
+      <p>My family is incredibly important to me. They have always had my back and always will! My parents, Scott and Heather, have always been incredibly supportive and encouraging in all of my endeavors. I have two siblings: my brother, Scott, and my sister, Madi. While we didn't get along much as kids (if ever!), as adults we are much closer and understanding of each other. I also have a niece and a nephew, from my brother and his wife, Sarah: Kinsley, who just turned 1 about 2 months ago, and Sawyer, who just turned 4 last month!</p>
+
+      <p>My girlfriend, Abby, is also as much ingrained in our family as my brother's wife, Sarah. We've been together for 8 years in December! Abby has been there for me like no other for years; she is my best friend, my confidante, the person I know I can trust with absolutely anything without any form of judgement. She's incredibly gracious, kind, open-minded, open-hearted, and passionate.</p>
+
+      <p>In our family, our pets are just as much family as anyone else. We have 4 dogs, and 2 cats. Our dogs are: Honey, a maltese poodle, Oliver, a bichon-shih tsu mix, Scout, a collie-spitz-German Shepherd mix, and Olivia, a shih tsu. We also have an old tuxedo cat, who's name is either Simba or Steve depending on the person and the circumstances. All of my pets are at my parents house back in Pittsburgh, except for my emotional support cat, Figaro. Figaro is a little pain in the butt, but he has the most loving and social personality you could ever find in a cat. In my apartment, we often joke about how Figaro is a "cat dog" because he acts so much like a dog! Everyone that comes and visits can't help but love Fig--and how could you not when he goes out of his way to pester you for attention!</p>
+    </div>
+
+    <div id="friends" class="tabcontent">
+      <h3>Friends</h3>
+      <p>For a long time, I didn't think I had many friends. However, I have come to realize how many amazing people have come into my life and stayed there without even really being aware of their impact; sometimes, it just feels like they are family. Two of my closest friends are my roommates, Zack and Corey. We spend a lot of time together, partly because we're roommates, but mainly because we enjoy each other's company. I have many friends that I made in my time working at Disney World: Michelle, Julia, Jenna, Hannah, John Jean, Tom, Ryan, Erin, Hunter, Taylor. Without my friends, I'm not sure I ever would have come to find comfort with my place in the world. They provide me a whole different perspective in this admittedly grim world; I wouldn't have the more optimistic view on life had it not been for my friends.</p>
+    </div>
+
+    <div id="u2" class="tabcontent">
+      <h3>U2</h3>
+      <h5>"Sometimes fear is the only place / That we can call our home"</h5>
+      <p>I have been a mega U2 fan for years now. My obsession started all the way back in 2009 when my parents took me to see them live in concert in Charlottesville, Virginia. In addition to it being my first real rock'n'roll concert, it was also the best line up for a concert I think I have ever been to. On that night, one of my other favorite bands, Muse, opened for U2. Absolutely unforgettable. U2 had a major impact on my teen years; I first listened to their hit 1991 album, Achtung Baby, when I was around 12 and it changed my perspective on who I could be as a person. Later down the line, in high school, when the U2-Apple scandle happened and everyone was infuriated about the free album on their phones, I was absolutely ecstatic! Songs of Innocence remains the soundtrack of my later teen years. From heartache, to anger, to loneliness, to acceptance, to realization... the album touched me, changed me, moved me. These weren't just songs inspired by the early days of one of my favorite bands--these were songs that would go on to inspire the rest of my high school career, into college.</p>
+    </div>
+
+    <div id="radiohead" class="tabcontent">
+      <h3>Radiohead</h3>
+      <h5>"Just 'cause you feel it / Doesn't mean it's there..."</h5>
+      <p>I am admittedly a relatively new Radiohead fan, but the effect that Radiohead has had on me in the short span that I've been listening to them deserves a spot on this website. I started getting into Radiohead during my time in Florida. This was admittedly a huge time of self-discovery and realization, and ended up turning into both one of the best and worst 6 months of my entire life. During the low times, I would often feel alone, isolated, almost alien to those around me. I have always struggled with "fitting in," but when you are on your own trying to "find who you are," when you feel alone, you feel <strong>alone</strong>. I started listening to OK Computer, and I was instantly hooked by the first 3 tracks: Airbag, Paranoid Android, and Subterranean Homesick Alien. These songs spoke to me at the time, understood where I was at mentally, and helped me to come to terms that, no, things don't have to be okay, no you don't have to understand, and that's completely normal. It's okay not to be okay. And that's where my love started. I've fallen deeper and deeper in love with this band the more I explore their music. In Rainbows is a masterpiece, The King of Limbs is extremely underrated, and Hail to the Thief is more relevant than ever.</p>
+    </div>
+
+    <div class="">
+
+    </div>
+  </body>
+</html>
