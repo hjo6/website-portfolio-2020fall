@@ -117,9 +117,11 @@
 
 .tabcontent-container {
   display: none;
-  padding: 6px 12px;
+  padding: 0 50px;
   border: 1px solid #ccc;
+  border-bottom: 1px solid #000;
   border-top: none;
+  background-color: peachpuff;
 }
 
 .tabcontent-container p {
@@ -129,6 +131,14 @@
 .tabcontent {
   display: flex;
   flex-wrap: wrap;
+  padding: 10px 50px 10px 50px;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  background-color: #FFF;
+}
+
+.tabcontent .img-grid {
+  align-items: center;
 }
 
 .tabcontent h3 {
@@ -137,6 +147,18 @@
 
 .tabcontent h5 {
   font-size: 1em;
+}
+
+.img-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.img-grid img {
+  padding: 20px;
+  width: 30%;
+  min-width: 200px;
 }
 
 .quote {
@@ -150,4 +172,6 @@
 
 .lyric-button {
   border-radius: 6px;
+  font-size: 0.8em;
+  margin: 10px;
 }
