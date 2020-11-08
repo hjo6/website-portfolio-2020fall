@@ -66,7 +66,7 @@
         "\"Yeah, everybody leaves / If they get the chance / And this / Is my chance.\" - Radiohead, Weird Fishes/ Arpeggi",
         "\"Dedicated to all / All human beings.\" - Radiohead, Reckoner",
         "\"Because we separate / Like ripples on a blank shore.\" - Radiohead, Reckoner",
-        "\"This is one for the good days / And I have it all here in red blue green / In red, blue, green.\" - Radiohead, Videotape",
+        "\"This is one for the good days / And I have it all here in red, blue, green / In red, blue, green.\" - Radiohead, Videotape",
         "\"No matter what happens now / You shouldn\'t be afraid / Because I know today has been / The most perfect day I\'ve ever seen\" - Radiohead, Videotape",
         "\"There\'s an empty space inside my heart / Where the weeds take root / So now I\'ll set you free / I\'ll set you free.\" - Radiohead, Lotus Flower",
         "\"Slowly we unfurl / As lotus flowers / Cause all I want is the moon upon a stick\" - Radiohead, Lotus Flower",
@@ -153,17 +153,19 @@
 
     <div id="u2" class="tabcontent-container">
       <div class="tabcontent">
-        <h3>U2</h3>
-        <h5 id="u2quote"></h5>
-        <button type="button" onclick="getQuote('u2quote')" class="lyric-button">Click here to randomize the lyrics!</button>
-        <script>
-          var randomStrings = [...u2quotes];
-          var randomDiv = document.getElementById("u2quote");
+        <div class="quote">
+          <h3>U2</h3>
+          <h5 id="u2quote"></h5>
+          <button type="button" onclick="getQuote('u2quote')" class="lyric-button">Click here to randomize the lyrics!</button>
+          <script>
+            var randomStrings = [...u2quotes];
+            var randomDiv = document.getElementById("u2quote");
 
-          randomIndex = Math.ceil((Math.random()*randomStrings.length-1));
-          newText = randomStrings[randomIndex];
-          randomDiv.innerHTML = newText;
-        </script>
+            randomIndex = Math.ceil((Math.random()*randomStrings.length-1));
+            newText = randomStrings[randomIndex];
+            randomDiv.innerHTML = newText;
+          </script>
+        </div>
         <p>I have been a mega U2 fan for years now. My obsession started all the way back in 2009 when my parents took me to see them live in concert in Charlottesville, Virginia. In addition to it being my first real rock'n'roll concert, it was also the best line up for a concert I think I have ever been to. On that night, one of my other favorite bands, Muse, opened for U2. Absolutely unforgettable. U2 had a major impact on my teen years; I first listened to their hit 1991 album, Achtung Baby, when I was around 12 and it changed my perspective on who I could be as a person. Later down the line, in high school, when the U2-Apple scandle happened and everyone was infuriated about the free album on their phones, I was absolutely ecstatic! Songs of Innocence remains the soundtrack of my later teen years. From heartache, to anger, to loneliness, to acceptance, to realization... the album touched me, changed me, moved me. These weren't just songs inspired by the early days of one of my favorite bands--these were songs that would go on to inspire the rest of my high school career, into college.</p>
       </div>
     </div>
