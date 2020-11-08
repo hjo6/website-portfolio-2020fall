@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function openTab(evnt, tabName) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent-container");
+        for (i=0; i < tabcontent.length; i++){
+          tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i=0; i < tablinks.length; i++){
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(tabName).style.display = "block";
+        evnt.currentTarget.className += " active";
+      }
+    </script>
+  </head>
+  <body>
+      <div class="header-container">
+        <div class="header">
+          <div class="banner">School Projects</div>
+        </div>
+      </div>
+
+      <div class="body-container">
+        <div class="body">
+          <div class="dropdown">
+            <button class="dropbutton">School</button>
+            <div class="dropdown-content">
+              <button class="tablinks" onclick="openTab(event,'cdmva')">Composing Digital Media Visual Argument</button>
+              <button class="tablinks" onclick="openTab(event,'cdms')">Composing Digital Media Soundscape</button>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbutton">Music</button>
+            <div class="dropdown-content">
+              <button type="tablinks" onclick="openTab(event,'world')">World On Fire - AROSE</button>
+              <button type="tablinks" onclick="openTab(event,'shiver')">Shiver - Your Average Misfits</button>
+              <button type="tablinks" onclick="openTab(event,'time')">Where Did the Time Go? - Your Average Misfits</button>
+              <button type="tablinks" onclick="openTab(event,'fall')">The Fall - Your Average Misfits</button>
+              <button type="tablinks" onclick="openTab(event,'thoughts')">Thoughts Don't Show - Your Average Misfits</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cdmva" class="tabcontent-container">
+        <div class="tabcontent">
+          <h3>100 Seconds</h3>
+          <div class="proj-img">
+            <img src="assets/100seconds.jpg" alt="">
+          </div>
+          <p>This graphic, titled 100 Seconds, is my Visual Argument project that I created for my Composing Digital Media class. I sought to create an image that conveyed the urgency behind the idea of the Doomsday Clock. To briefly summarize, the Doomsday Clock represents how close we are to destroying our world. In January 2020, it was announced that we are officially 100 Seconds to Midnight.</p>
+        </div>
+      </div>
+
+      <div id="cdms" class="tabcontent-container">
+        <div class="tabcontent">
+          <div class="quote">
+            <h3>Figaro's Life</h3>
+            <audio controls>
+              <source src="assets/figaros_life.mp3" type="audio/mp3">
+            </audio>
+          </div>
+          <p>I created this soundscape, titled Figaro's Life, for my Composing Digital Media class. I wanted to create a soundscape that was relatively familiar, but had a bit of a twist; so I decided to record the sounds in my apartment, and follow my cat, Figaro, around as I go through a typical evening.</p>
+        </div>
+      </div>
+
+      <div id="world" class="tabcontent-container">
+        <div class="tabcontent">
+          <div class="quote">
+            <h3>World On Fire by AROSE feat. Raldi</h3>
+          </div>
+          <div class="world-body">
+            <iframe src="https://open.spotify.com/embed/album/05gebKQhh5Un4Ekb4Ed7Xf" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <p>Recently, I've been writing and recording guitar parts for a local artist and friend back home, AROSE. Our most recent release is called World On Fire and features me on guitar! AROSE released the track on election day; a fitting day to release a track called World On Fire in 2020, no? This track sees a shift in my playing style from rock and punk to R&B and hip hop. I'm extremely grateful and excited for this opportunity and hope you enjoy our new release, streaming on all platforms!</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="shiver" class="tabcontent-container">
+        <div class="tabcontent">
+          <div class="quote">
+            <h3>Shiver by Your Average Misfits</h3>
+            <audio controls>
+              <source src="assets/shiver.wav" type="audio/wav">
+            </audio>
+          </div>
+          <p>Shiver is one of four songs that I recorded with my high school band, Your Average Misfits. I was lead singer in the band, so all of the vocals are yours truly! This song was the first one that we wrote and arranged on our own, so it holds a special place in my heart. Around the time Brian had written the lyrics to the song, I was going through a rough patch where I felt so very alone. Working through this with Brian (guitarist), Chris (bass), and Caleb (drums) made me realize that I was not alone, that I had friends that, not only knew what I was going through, were going through the same things I was. It's part of where our (original) band name, Your Average Misfits, came from.</p>
+        </div>
+      </div>
+
+      <div id="time" class="tabcontent-container">
+        <div class="tabcontent">
+          <div class="quote">
+            <h3>Where Did the Time Go? by Your Average Misfits</h3>
+            <audio controls>
+              <source src="assets/time.wav" type="audio/wav">
+            </audio>
+          </div>
+          <p>Where Did the Time Go? No, really, where did it go? This is one of four songs that I recorded with my high school band, Your Average Misfits. I was lead singer in the band, so all of the vocals are yours truly! This song was written around the same time as Shiver, but came maybe a few hours after the arrangement of Shiver. As the days continue to roll by, I find myself coming back to these songs, and this one always gets me. Written about the fear of facing the future and the fear of leaving the past behind, this song encapsulates that naive innocence I feel we all have when we're in high school. I still have a bad habit of worrying about the future, but even more than that, I find myself losing track of time. Now, over 4 years later, I'm at a very similar point in my life as I was when recording this; where will the future take us? And should we hold the past in such high esteem?</p>
+        </div>
+      </div>
+
+      <div id="fall" class="tabcontent-container">
+        <div class="tabcontent">
+          <div class="quote">
+            <h3>The Fall by Your Average Misfits</h3>
+            <audio controls>
+              <source src="assets/fall.wav" type="audio/wav">
+            </audio>
+          </div>
+          <p>The Fall is one of four songs that I recorded with my high school band, Your Average Misfits. I was lead singer in the band, so all of the vocals are yours truly! This song is about finding the optimism in dark times. The subject of the song is the self; I would describe it as an introspective piece, looking at the self-destructive habits we have and trying to recognize and reconcile with them. This song went through an interesting songwriting cycle. We brought it into the studio for the producer to hear, and they wanted to change it from pop-rock to a much more punk-y sound. Originally, Brian would play piano during the verses, and guitar for the chorus, and I would play lead guitar in the verses. What we had written was a nearly seven minute song, which we ended up cutting down to about 3 minutes. The distorted, siren sounding keyboard (it sounds like a guitar, or maybe even a submarine SONAR) is actually a remnant from the original, as we tried to fit the piano in, but it did not blend well in the mix.</p>
+        </div>
+      </div>
+
+      <div id="thoughts" class="tabcontent-container">
+        <div class="tabcontent">
+          <div class="quote">
+            <h3>Toughts Don't Show by Your Average Misfits</h3>
+            <audio controls>
+              <source src="assets/thoughts.wav" type="audio/wav">
+            </audio>
+          </div>
+          <p>Thoughts Don't Show is one of four songs that I recorded with my high school band, Your Average Misfits. I was lead singer in the band, so all of the vocals are yours truly! This song was basically written in the studio as we were recording. I remember vividly playing in the studio with the full band, and having the lyrics pulled up in my Notebook app on my phone. This song is dear to me because of that process. I think this was the closest we ever got to being a legitimate "recording" band. We recorded the different parts as we were writing, and then once we had a "whole" product, we recorded it in full. It was an interesting experience, and a process I still use when writing songs today. The song itself deals with struggling to find the words to explain the way you feel, and feeling misunderstood because of this struggle. It has taken me years to get to a level of communication where I can articulate exactly what I'm feeling and thinking. Listening again years later has made me realize that this song, and really this whole EP, are heavily influenced by naivete and innocence.</p>
+        </div>
+      </div>
+
+      <div class="directory-container">
+        <div class="directory">
+
+          <a href="index.html" class="button">
+            <div class="directory-item">Home</div>
+          </a>
+
+          <a href="influences.html" class="button">
+            <div class="directory-item">Influences</div>
+          </a>
+
+          <a href="experiences.html" class="button">
+            <div class="directory-item">Experiences</div>
+          </a>
+
+        </div>
+      </div>
+  </body>
+</html>
