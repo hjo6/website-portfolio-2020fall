@@ -115,13 +115,39 @@
   background-color: #ccc;
 }
 
-.tabcontent{
+.tabcontent-container {
   display: none;
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
 }
 
-.tabcontent p {
+.tabcontent-container p {
   text-indent: 5%;
+}
+
+.tabcontent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabcontent h3 {
+  font-size: 2em;
+}
+
+.tabcontent h5 {
+  font-size: 1em;
+}
+
+.quote {
+  float: left;
+}
+
+.lyric {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.lyric-button {
+  border-radius: 6px;
 }
