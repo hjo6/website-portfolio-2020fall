@@ -12,3 +12,5 @@
 | Image of U2 (u2peace) | Image found at [this link.](https://www.billboard.com/articles/news/9427058/u2-donate-live-music-covid19) Image Credit: Olaf Heine. Taken in 2017. |
 | Image of Radiohead | Image found at [this link.](https://www.irishtimes.com/culture/music/everything-in-a-new-place-the-art-of-reimagining-radiohead-1.3854621) Image Credit: Radiohead. |
 | Images of Radiohead Art (radiohead-logo, amnesiac) | Images found at [this link.](https://www.radiohead.com/library/) Credit: Stanley Donwood. |
+| Music from my band | Upload and host the .wav files. Credits: Brian Daggs: Guitar, Lyrics; Chris Hudson: Bass, Lyrics; Caleb Weaver: Drums; Hunter Osterhoudt: Vocals, Guitar, Lyrics |
+| Music from AROSE | Share Spotify preview of song and link to Spotify page |
