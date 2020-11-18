@@ -15,8 +15,8 @@ h5 {
 }
 
 .header-container {
-  color: #840000; /* Dark red */
-  background-color: #FF864D;  /* Orange */
+  color: var(--headcon-color);
+  background-color: var(--headcon-bgcolor);
   padding: 20px 0;
   display: flex;
   justify-content: center;
@@ -26,7 +26,7 @@ h5 {
 .header {
   margin: 5px;
   border: 3px solid #000;
-  background-color: #A86;
+  background-color: var(--header-bgcolor);
   width: 800px;
   display: flex;
   justify-content: center;
@@ -39,8 +39,8 @@ h5 {
 
 .body-container {
   padding: 20px;
-  color: #840000;
-  background-color: #D6E9FE;
+  color: var(--bodycon-color);
+  background-color: var(--bodycon-bgcolor);
   display: flex;
   justify-content: center;
   height: auto;
@@ -55,7 +55,7 @@ h5 {
   flex-direction: row;
   align-items: center;
   border: 2px solid #000;
-  background-color: peachpuff;
+  background-color: var(--body-bgcolor);
 }
 
 .about-me {
@@ -66,6 +66,12 @@ h5 {
   flex-wrap: wrap;
 }
 
+.about-me a {
+  text-decoration: none;
+  color: var(--abtmea-color);
+
+}
+
 .about-me img {
   width: 350px;
 }
@@ -74,17 +80,21 @@ h5 {
   height: auto;
   display: flex;
   justify-content: center;
-  background-color: #FF864D;  /* Orange */
+  background-color: var(--dircon-bgcolor);  /* Orange */
 }
 
 .directory {
   width: 900px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   padding: 20px;
+}
+
+.directory a {
+  text-decoration: none;
 }
 
 .button {
@@ -93,8 +103,8 @@ h5 {
 
 .directory-item {
   border: 2px solid #000;
-  background-color: #A86;
-  color: #840000;
+  background-color: var(--diritm-bgcolor);
+  color: var(--diritm-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,8 +114,9 @@ h5 {
 
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border: 1px solid var(--tab-borcolor);
+  background-color: var(--tab-bgcolor);
+  color: var(--tab-color);
 }
 
 .tab button {
@@ -119,20 +130,19 @@ h5 {
 }
 
 .tab button:hover {
-  background-color: #ddd;
+  background-color: var(--tabbtnhov-bgcolor);
 }
 
 .tab button.active {
-  background-color: #ccc;
+  background-color: var(--tabbtnact-bgcolor);
 }
 
 .tabcontent-container {
   display: none;
   padding: 0 50px;
-  border: 1px solid #ccc;
   border-bottom: 1px solid #000;
   border-top: none;
-  background-color: peachpuff;
+  background-color: var(--tabconcon-bgcolor);
 }
 
 .tabcontent-container p {
@@ -145,7 +155,8 @@ h5 {
   padding: 10px 50px 10px 50px;
   border-left: 1px solid #000;
   border-right: 1px solid #000;
-  background-color: #FFF;
+  color: var(--tabcon-color);
+  background-color: var(--tabcon-bgcolor);
 }
 
 .tabcontent .img-grid {
@@ -193,14 +204,14 @@ h5 {
   padding: 0 50px 0 0;
   border-left: 1px solid #000;
   border-right: 1px solid #000;
-  background-color: #FFF;
+  background-color: var(--tabconprj-bgcolor);
 }
 
 .vertical-tab {
   overflow: auto;
   float: left;
   border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: var(--vtab-bgcolor);
   width: 30%;
   height: 100%;
 }
@@ -224,6 +235,7 @@ h5 {
 
 .proj-img img {
   width: 75%;
+  align-self: flex-start;
 }
 
 .world-body {
@@ -245,14 +257,14 @@ h5 {
 .sidebar {
   display: flex;
   float: left;
-  background-color: #F1F1F1;
+  background-color: var(--side-bgcolor);
   min-height: 300px;
   width: 20%;
   max-width: 150px;
   flex-direction: column;
   align-items: space-around;
   border-right: 1px solid #000;
-  border-left: 1px solid #000;border-right: 1px solid #000;
+  border-left: 1px solid #000;
   padding: 5px;
 }
 
@@ -269,8 +281,63 @@ h5 {
   overflow: none;
 }
 
+.body.experiences {
+  justify-content: center;
+}
+
 .iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media (prefers-color-scheme: light){
+  :root {
+    --headcon-color: #840000;
+    --headcon-bgcolor: #FF864D;
+    --header-bgcolor: #A86;
+    --bodycon-color: #840000;
+    --bodycon-bgcolor: #D6E9FE;
+    --body-bgcolor: peachpuff;
+    --abtmea-color: blue;
+    --dircon-bgcolor: #FF864D;
+    --diritm-bgcolor: #A86;
+    --diritm-color: #840000;
+    --tab-borcolor: #AFAFAF;
+    --tab-bgcolor: #F1F1F1;
+    --tab-color: #FFF;
+    --tabbtnhov-bgcolor: #DDD;
+    --tabbtnact-bgcolor: #CCC;
+    --tabconcon-bgcolor: peachpuff;
+    --tabcon-bgcolor: #FFF;
+    --tabconprj-bgcolor: #FFF;
+    --vtab-bgcolor: #F1F1F1;
+    --side-bgcolor: #F1F1F1;
+  }
+}
+
+@media (prefers-color-scheme: dark){
+  :root {
+    --headcon-color: #0E2A62;
+    --headcon-bgcolor: #02060E;
+    --header-bgcolor: #5A77AE;
+    --bodycon-color: #B8C4DC;
+    --bodycon-bgcolor: #06122A;
+    --body-bgcolor: #0E2A62;
+    --abtmea-color: #FFA376;
+    --dircon-bgcolor: #02060E;
+    --diritm-bgcolor: #5A77AE;
+    --diritm-color: #0E2A62;
+    --tab-borcolor: #06122A;
+    --tab-bgcolor: #5A77AE;
+    --tab-color: #0E2A62;
+    --tabbtnhov-bgcolor: #3C4C6B;
+    --tabbtnact-bgcolor: #B8C4DC;
+    --tabconcon-bgcolor: #0E2A62;
+    --tabcon-bgcolor: #143D8C;
+    --tabcon-color: #B8C4DC;
+    --tabconprj-bgcolor: #FFF;
+    --vtab-bgcolor: #F1F1F1;
+    --side-bgcolor: #F1F1F1;
+  }
 }
