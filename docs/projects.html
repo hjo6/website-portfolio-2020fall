@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Experiences Directory</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Montserrat&display=swap" rel="stylesheet">
@@ -99,6 +99,14 @@
           $('#thoughts').css('display', 'flex');
         });
       });
+
+      $(document).ready(function(){
+        $("#cap-button").click(function(){
+          hideContent('pittcoffee');
+          $("#pittcoffee").animate({display: 'block', height:'toggle', paddingLeft:'toggle', paddingRight: 'toggle', width:'toggle'},1000);
+          $('#pittcoffee').css('display', 'flex');
+        });
+      });
     </script>
   </head>
   <body>
@@ -124,6 +132,7 @@
         <h5>School</h5>
         <button class="tablinks" id="cdm1-button">Composing Digital Media: Visual Argument</button>
         <button class="tablinks" id="cdm2-button">Composing Digital Media: Soundscape</button>
+        <button class="tablinks" id="cap-button">Computer Science Capstone: PittCoffee</button>
       </div>
       <div class="tabcontent project" id="cdm-va">
         <h3>100 Seconds</h3>
@@ -140,6 +149,23 @@
           </audio>
         </div>
         <p>I created this soundscape, titled Figaro's Life, for my Composing Digital Media class. I wanted to create a soundscape that was relatively familiar, but had a bit of a twist; so I decided to record the sounds in my apartment, and follow my cat, Figaro, around as I go through a typical evening.</p>
+      </div>
+      <div class="tabcontent project" id="pittcoffee">
+        <h3>PittCoffee</h3>
+        <div class="proj-img">
+          <img src="assets/pittcoffee_site.png" alt="">
+        </div>
+        <p>For my Capstone Project for Computer Science, I took a Team Project Design and Implementation class where I was assigned a project, a team to work on the project with, and a project sponsor/customer. For our project, my team developed a website/application called PittCoffee. Our application interacts with the user through conversation to order items from a coffee shop. We use artifical intelligence and natural language generation to be able to understand the user and respond in a natural manner. Our application is unique in that it is multimodal based on the user's context and needs; there is a text module so that the user can simply text the application, a speech module so that they can talk in real time to the application, and a touch module to edit the order. The scope of the project ended up being larger than we could complete in a single semester, so to fully realize our vision, we aim to continue collaborating with our project sponser in the future to develop a more mature natural language understanding and generation system. Our big picture goal is to collaborate on a research paper with graduate level students within the next few months.</p>
+        <p>My biggest contribution to the project would be in designing and implementing the website component. Originally, we had developed an application for Android devices; we switched to a website so that gathering data would be easier (as most of our developers had iOS devices). So around midway through the semester, I was tasked with designing the website. I used all of the knowledge I learned about webdesign from my Composing Digital Media class to undertake the creation of the website. My first draft was much more rough than the above design, but eventually I would rework the website into the above using further knowledge gained from my CDM class. I used div containers to construct all of the website, but containerizing the chat messages and getting them to display properly was a task that CDM had not completely prepared me for. I overcame the issue by using the sleuthing skills acquired both from my CDM website portfolio functionality, but also from previous CS courses in order to figure out how to implement the message system.</p>
+        <p>Other than the website design and some of the functionality, I also was tasked with developing the backend for the Android application. This entailed setting up a Flask server to host the application locally for testing, migrating the functions from the frontend to the backend to maintain separation of UI and functionality, and getting the basic responses from the backend to the frontend. This was all a lot of work, though it helped build the foundations needed for classes in the same semester (such as Cloud Computing and even Composing Digital Media).</p>
+        <p>I've provided images below of the HTML and CSS that I coded for the website part of this project. Our GitHub repository for the project is private, so I figured that this was a good way to showcase my work for the project.</p>
+
+        <div class="proj-img">
+          <img src="assets/pittcoffee_html_code.png" alt="">
+        </div>
+        <div class="proj-img">
+          <img src="assets/pittcoffee_css_code.png" alt="">
+        </div>
       </div>
     </div>
 
