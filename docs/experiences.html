@@ -6,23 +6,50 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-      function openTab(evnt, tabName) {
-        var i, tabcontent, tablinks;
-
+      function closeTabs(id) {
         tabcontent = document.getElementsByClassName("tabcontent-container");
         for (i=0; i < tabcontent.length; i++){
-          tabcontent[i].style.display = "none";
+          if (tabcontent[i].id === id){
+            continue;
+          } else {
+            tabcontent[i].style.display = "none";
+          }
         }
-
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i=0; i < tablinks.length; i++){
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-
-        document.getElementById(tabName).style.display = "block";
-        evnt.currentTarget.className += " active";
       }
+
+      $(document).ready(function(){
+        $("#dcp-button").click(function(){
+          closeTabs('dcp');
+          $("#dcp").animate({height:'toggle'},1000);
+          $('#dcp').css('display', 'flex');
+        });
+      });
+
+      $(document).ready(function(){
+        $("#pmgc-button").click(function(){
+          closeTabs('pmgc');
+          $("#pmgc").animate({height:'toggle'},1000);
+          $('#pmgc').css('display', 'flex');
+        });
+      });
+
+      $(document).ready(function(){
+        $("#ama-button").click(function(){
+          closeTabs('ama');
+          $("#ama").animate({height:'toggle'},1000);
+          $('#ama').css('display', 'flex');
+        });
+      });
+
+      $(document).ready(function(){
+        $("#ychc-button").click(function(){
+          closeTabs('ychc');
+          $("#ychc").animate({height:'toggle'},1000);
+          $('#ychc').css('display', 'flex');
+        });
+      });
     </script>
   </head>
   <body>
@@ -35,16 +62,16 @@
     <div class="body-container">
       <div class="body experiences">
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'dcp')">Disney College Program</button>
+          <button id="dcp-button" class="tablinks">Disney College Program</button>
         </div>
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'pmgc')">Pitt Men's Glee Club</button>
+          <button id="pmgc-button" class="tablinks">Pitt Men's Glee Club</button>
         </div>
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'ama')">American Music Abroad</button>
+          <button id="ama-button" class="tablinks">American Music Abroad</button>
         </div>
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'ychc')">York County Honors Choir</button>
+          <button id="ychc-button" class="tablinks">York County Honors Choir</button>
         </div>
       </div>
     </div>
