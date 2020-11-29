@@ -133,7 +133,7 @@ h5 {
   background-color: var(--tabbtnhov-bgcolor);
 }
 
-.tab button.active {
+.tab button:active {
   background-color: var(--tabbtnact-bgcolor);
 }
 
@@ -270,6 +270,19 @@ h5 {
 
 .sidebar .tablinks {
   margin-top: 5px;
+  background-color: var(--tabcon-color);
+  outline: none;
+  border: 1px solid var(--tab-borcolor);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar .tablinks:hover {
+  background-color: var(--tabbtnhov-bgcolor);
+}
+
+.sidebar .tablinks:active {
+  background-color: var(--tabbtnact-bgcolor);
 }
 
 .tabcontent.project {
@@ -332,12 +345,12 @@ h5 {
     --tab-bgcolor: #5A77AE;
     --tab-color: #0E2A62;
     --tabbtnhov-bgcolor: #3C4C6B;
-    --tabbtnact-bgcolor: #B8C4DC;
+    --tabbtnact-bgcolor: #FFF;
     --tabconcon-bgcolor: #0E2A62;
     --tabcon-bgcolor: #143D8C;
     --tabcon-color: #B8C4DC;
     --tabconprj-bgcolor: #FFF;
     --vtab-bgcolor: #F1F1F1;
-    --side-bgcolor: #F1F1F1;
+    --side-bgcolor: #5A77AE;
   }
 }
