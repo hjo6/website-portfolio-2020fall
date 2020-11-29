@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       var u2quotes = [
         "\"Sometimes fear is the only place / That we can call our home\" - U2, Cedarwood Road",
@@ -79,22 +80,6 @@
         "\"When at last, you give in / When at last, you give in / Wake me up, will you wake me up?\" - Radiohead, Separator"
       ]
 
-      function openTab(evnt, tabName) {
-        var i, tabcontent, tablinks;
-
-        tabcontent = document.getElementsByClassName("tabcontent-container");
-        for (i=0; i < tabcontent.length; i++){
-          tabcontent[i].style.display = "none";
-        }
-
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i=0; i < tablinks.length; i++){
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-
-        document.getElementById(tabName).style.display = "block";
-        evnt.currentTarget.className += " active";
-      }
       function getQuote(id) {
         var randomStrings = "";
         if (id === 'u2quote'){
@@ -109,6 +94,49 @@
         newText = randomStrings[randomIndex];
         randomDiv.innerHTML = newText;
       }
+
+      function closeTabs(id) {
+        tabcontent = document.getElementsByClassName("tabcontent-container");
+        for (i=0; i < tabcontent.length; i++){
+          if (tabcontent[i].id === id){
+            continue;
+          } else {
+            tabcontent[i].style.display = "none";
+          }
+        }
+      }
+
+      $(document).ready(function(){
+        $("#family-button").click(function(){
+          closeTabs('family');
+          $("#family").animate({height:'toggle'},1000);
+          $('#family').css('display', 'flex');
+        });
+      });
+
+      $(document).ready(function(){
+        $("#friends-button").click(function(){
+          closeTabs('friends');
+          $("#friends").animate({height:'toggle'},1000);
+          $('#friends').css('display', 'flex');
+        });
+      });
+
+      $(document).ready(function(){
+        $("#u2-button").click(function(){
+          closeTabs('u2');
+          $("#u2").animate({height:'toggle'},1000);
+          $('#u2').css('display', 'flex');
+        });
+      });
+
+      $(document).ready(function(){
+        $("#radiohead-button").click(function(){
+          closeTabs('radiohead');
+          $("#radiohead").animate({height:'toggle'},1000);
+          $('#radiohead').css('display', 'flex');
+        });
+      });
     </script>
   </head>
   <body>
@@ -121,16 +149,16 @@
     <div class="body-container">
       <div class="body">
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'family')">Family</button>
+          <button id="family-button" class="tablinks">Family</button>
         </div>
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'friends')">Friends</button>
+          <button id="friends-button" class="tablinks">Friends</button>
         </div>
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'u2'); getQuote('u2quote')">U2</button>
+          <button id="u2-button" class="tablinks" onclick="getQuote('u2quote')">U2</button>
         </div>
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'radiohead'); getQuote('radioheadquote')">Radiohead</button>
+          <button id="radiohead-button" class="tablinks" onclick="getQuote('radioheadquote')">Radiohead</button>
         </div>
       </div>
     </div>
