@@ -14,11 +14,11 @@ For my final project, I want to continue working towards making my website portf
 - More fleshed out repository
   - Find way to demo code?
   - Determine how to present code
-- ~~Resume~~
+- ~~Resume~~ **(Scrapped for redundancy: those that will have access to the site in the future will have gotten access from the link on my resume. )**
 - Add some form of contact/interaction
   - Social Media?
   - E-mail?
-  - Comment section?
+  - ~~Comment section?~~ **(Does not really fit the theme for what I plan to use this website for)**
 
 #### Stretch Goals for Website Revision:
 - Make homepage more interesting
