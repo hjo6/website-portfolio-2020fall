@@ -203,6 +203,31 @@
       </div>
       <div class="tabcontent project" id="cvhw6">
         <h3>Stitching Images Together Using Image Homography</h3>
+        <div class="proj-img">
+          <img src="assets/keble_mosaic.png" alt="">
+        </div>
+        <div class="proj-img">
+          <img src="assets/uttower_mosaic.png" alt="">
+        </div>
+        <p>The code in this tab is for my sixth homework assignment for my Intro to Computer Vision course. The above images show the mosaic/"stitching" results from my program. The homework assignment was to estimate the homography between 2 images of the same scene taken at different angles, apply the homography, and then create a new image that combines the images into one "mosaic". Seen below is the code to estimate the homography between 2 images. A system of equations is used to compute the homography between 2 images.</p>
+        <div class="proj-img">
+          <img src="assets/estimate_homography_code.png" alt="">
+        </div>
+        <p>Following this step, the homography is applied to one of the images to transform it to fit with the other image. This is a simple matrix multiplication; the code below is to apply the homography.</p>
+        <div class="proj-img">
+          <img src="assets/apply_homography_code.png" alt="">
+        </div>
+        <p>Finally, I use a script called mosaic.m to apply the previous two functions together in order to stitch images together. For this assignment, we were required to handpick the points from each picture that could be used in calculating the homography. For each image, you can see that there are matrices holding the coordinates for the image pair. I simply call the estimate_homography function first, passing in the required arguments, then call the apply_homography function to apply the homography to the images. I then display the image pair with a single point displayed on each image showing where the point on the first image is on the second image (and vice versa). Finally, I stitch the image together and display the result, which is shown at the top of the page. The code for my mosaic.m is shown below.</p>
+        <div class="proj-img">
+          <img src="assets/mosaic_script_code.png" alt="">
+        </div>
+        <p>Shown above are the paired images showing the related point on each image. They're a bit difficult to see in both images. The left image in the first result shows a green dot on the left-most arch shape on the tower of the building. The right image shows a yellow dot in the same area which corresponds to the position of the green dot in the left image. The green dot for the second results image is located in the bottom left corner, on the fountain. The corresponding yellow dot in the right image is bottom-center in the image, on the same spot on the fountain.</p>
+        <div class="proj-img">
+          <img src="assets/keble_onept.png" alt="">
+        </div>
+        <div class="proj-img">
+          <img src="assets/uttower_onept.png" alt="">
+        </div>
       </div>
     </div>
 
